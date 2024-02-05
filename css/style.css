@@ -613,6 +613,7 @@ body {
   font-weight: bold;
   text-align: center;
   font-size: 10px;
+  min-width: 198px;
 }
 .card-box .status-inner-wrap .btn {
   min-width: 198px;
@@ -641,6 +642,7 @@ body {
 }
 select.form-input {
   display: block;
+  cursor: pointer;
   text-overflow: ellipsis;
   width: 100%;
   padding-right: 30px;
