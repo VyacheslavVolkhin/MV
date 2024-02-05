@@ -1,9 +1,16 @@
 :root {
-	--clr-base: #000;
-	--clr-att: #f00;
+	--clr-base: #494646;
+	--clr-att: #F86501;
+	--clr-att-hover: rgba(248, 101, 1, 0.5);
+	--clr-att-second: #001E44;
+	--clr-att-second-light: #5d6996;
+	--clr-att-second-hover: rgba(0, 30, 68, 0.50);
+	--clr-light: #e4e4e;
 
-	--min: 320px;
-	--max: 1200px;
+	--min: 360px;
+	--max: 1000px;
+    
+    --paddingContainer: 10px;
 
 	font-size: 10px;
 }
@@ -17,11 +24,14 @@
 			main styles
 \* ----------------------------------- */
 body {
-	color: var(--clr-base, #000);
-	background: #fff;
+	color: var(--clr-base);
+	background: #f1f5f9;
+    font-size: 10px;
+    line-height: (15/10);
 }
-p, ul, ol {
+p, ul, ol, table, blockquote, .bq-text {
 	position: relative;
+    margin-bottom: (15/10em);
 	img {
 		max-width: 100%;
 	}
@@ -29,25 +39,38 @@ p, ul, ol {
 		margin-bottom: 0 !important;
 	}
 }
-
 li {
 	position: relative;
 }
+.menu, .list {
+    margin: 0;
+    padding: 0;
+    li {
+        margin: 0;
+        padding: 0;
+        &:before {
+            display: none;
+        }
+    }
+}
 a {
-	text-decoration: none;
-	color: var(--clr-att, #f00);
-	&:hover {
-		text-decoration: none;
-		color: var(--clr-att, #f00);
-	}
+    text-decoration: none;
+    color: var(--clr-att);
+    &:hover {
+        text-decoration: none;
+        color: var(--clr-att-hover);
+    }
 }
 a.link-main, .link-main {
-	text-decoration: none;
-	border-bottom: 1px solid;
-	&:hover {
-		border-bottom: none;
-	}
+    text-decoration: none;
+    border-bottom: 1px solid;
+    &:hover {
+    }
 }
+.link-phone {
+    white-space: nowrap;
+}
+.page-title,
 h1, .h1-title,
 h2, .h2-title,
 h3, .h3-title,
@@ -56,7 +79,25 @@ h5, .h5-title,
 h6, .h6-title {
 	display: block;
 	position: relative;
+    font-weight: bold;
+    margin: 1em 0;
     &:first-child {
         margin-top: 0;
     }
+}
+.page-title {
+	font-size: 1em;
+	line-height: inherit;
+	color: inherit;
+	font-weight: 400;
+	margin: 0;
+}
+.text-att, .title-att {
+    color: var(--clr-att);
+}
+.text-light, .title-light {
+    color: var(--clr-light);
+}
+.text-center, .title-center {
+    text-align: center;
 }

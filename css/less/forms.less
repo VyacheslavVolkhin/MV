@@ -1,28 +1,6 @@
 /* ----------------------------------- *\
 			forms elements styles
 \* ----------------------------------- */
-textarea,
-input[type="text"],
-input[type="password"],
-input[type="email"],
-input[type="number"],
-input[type="range"],
-input[type="search"],
-input[type="tel"],
-input[type="url"] {
-	
-}
-textarea {
-	height: 100px;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	resize: none;
-}
-.btn,
-button,
-input[type="submit"] {
-	
-}
 .frm-row,
 .frm-field,
 .frm-row-submit {
@@ -30,6 +8,10 @@ input[type="submit"] {
     flex-wrap: wrap;
 	position: relative;
 	line-height: 1;
+}
+.frm-field {
+    display: block;
+    width: 100%;
 }
 .frm-select {
 	position: relative;
@@ -54,5 +36,47 @@ input[type="submit"] {
             display: block;
             position: absolute;
         }
+	}
+}
+.frm-select {
+	&.check-right {
+		label {
+			padding-left: 0;
+			padding-right: 24px;
+			&:after, &:before {
+				left: auto;
+				right: 10px;
+				margin: -10px -10px 0 0;
+			}
+		}
+	}
+	label {
+		min-height: 20px;
+		padding-left: 28px;
+		padding-top: 2px;
+		line-height: 16px;
+		&:before, &:after {
+			width: 20px;height: 20px;
+			border-radius: 4px;
+			border: 2px solid rgba(73, 70, 70, 0.2);
+			position: absolute;
+			top: 10px;left: 10px;
+			margin: -10px 0 0 -10px;
+		}
+		&:after {
+			border-color: var(--clr-base);
+			background: var(--clr-base) url(../img/icons/check.svg) center no-repeat;
+			background-size: 24px auto;
+			opacity: 0;
+		}
+	}
+	input {
+		&:checked {
+			&~label {
+				&:after {
+					opacity: 1;
+				}
+			}
+		}
 	}
 }

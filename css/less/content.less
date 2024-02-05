@@ -1,3 +1,131 @@
 /* ----------------------------------- *\
 			content styles
 \* ----------------------------------- */
+.card-box {
+	margin-bottom: 50px;
+	display: flex;
+	flex-wrap: wrap;
+	.photo-inner-wrap {
+		width: 135px;
+		flex-shrink: 0;
+		padding-top: 7px;
+		.elm-photo {
+			aspect-ratio: 135/179;
+		}
+		.page-title {
+			font-weight: 600;
+			text-align: center;
+			margin: 0;
+		}
+		.action-wrap {
+			text-align: center;
+			padding-top: 8px;
+			.btn {
+				height: 21px;
+				padding: 0 17px;
+				border-radius: 5px;
+				font-size: 10px;
+			}
+		}
+	}
+	.info-inner-wrap {
+		flex: 1;
+		padding: 0 0 0 20px;
+		max-width: calc(100% - 135px);
+		a {
+			&:not(:hover) {
+				color: inherit;
+			}
+		}
+		p {
+			margin-bottom: 5px;
+		}
+	}
+	.comment-inner-wrap {
+		margin-bottom: 5px;
+		color: var(--clr-att);
+		width: 100%;
+		flex-shrink: 0;
+	}
+	.desc-inner-wrap {
+		margin-bottom: 20px;
+		width: 100%;
+		flex-shrink: 0;
+	}
+	.action-inner-wrap {
+		width: 100%;
+		flex-shrink: 0;
+		margin-bottom: 20px;
+		font-size: 10px;
+		font-weight: bold;
+		color: var(--clr-att-second-light);
+		.btn {
+			&:not(:hover) {
+				color: inherit;
+			}
+			.button-ico {
+				margin-right: 5px;
+			}
+		}
+	}
+	.parameters-inner-wrap {
+		max-width: 1000px;
+		margin-bottom: 17px;
+		width: 100%;
+		flex-shrink: 0;
+		.frm-row {
+			margin: 0;
+			columns: 3;
+			column-gap: 15px;
+			display: block;
+		}
+		.frm-field {
+			padding: 0;
+			width: 100%;
+			margin-bottom: 10px;
+			page-break-inside: avoid;
+			break-inside: avoid-column;
+		}
+	}
+	.password-inner-wrap {
+		text-align: right;
+		margin-bottom: 30px;
+		font-weight: 600;
+		width: 100%;
+		flex-shrink: 0;
+		.btn {
+			.button-title {
+				margin-right: 10px;
+			}
+		}
+	}
+	.status-inner-wrap {
+		display: flex;
+		align-items: center;
+		margin-bottom: 12px;
+		flex-wrap: wrap;
+		width: 100%;
+		flex-shrink: 0;
+		.page-title {
+			margin: 0 6px 0 0;
+			padding: 5px 0;
+		}
+		.action-wrap {
+			flex-shrink: 0;
+		}
+		.btn {
+			min-width: 198px;
+			font-weight: bold;
+			font-size: 10px;
+		}
+	}
+}
+@media (min-width: 640px) {
+	.card-box {
+		.parameters-inner-wrap {
+			.frm-row {
+				columns: 4
+			}
+		}
+	}
+}
