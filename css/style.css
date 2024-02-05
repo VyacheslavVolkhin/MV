@@ -609,6 +609,11 @@ body {
   -ms-flex-negative: 0;
       flex-shrink: 0;
 }
+.card-box .status-inner-wrap .form-input {
+  font-weight: bold;
+  text-align: center;
+  font-size: 10px;
+}
 .card-box .status-inner-wrap .btn {
   min-width: 198px;
   font-weight: bold;
@@ -627,6 +632,12 @@ body {
 }
 .form-input {
   text-overflow: ellipsis;
+  height: 30px;
+  border-radius: 5px;
+}
+.form-input.form-att {
+  border-color: var(--clr-base);
+  background-color: var(--clr-att-hover);
 }
 select.form-input {
   display: block;
@@ -634,7 +645,7 @@ select.form-input {
   width: 100%;
   padding-right: 30px;
   background-image: url(../img/icons/arrow-select.svg);
-  background-position: right 20px center;
+  background-position: right 2px center;
   background-color: #fff;
   background-repeat: no-repeat;
   -moz-appearance: none;
