@@ -1,6 +1,105 @@
 /* ----------------------------------- *\
 			items styles
 \* ----------------------------------- */
+.item-tile-file-upload {
+	display: block;
+	position: relative;
+	.frm-select, .tile-title {
+		display: block;
+		font-size: 14px;
+		font-weight: 600;
+		margin-bottom: 5px;
+	}
+	.tile-title {
+		line-height: 20px;
+	}
+	.tile-title-main {
+		font-size: 14px;
+		line-height: 1.5;
+		font-weight: 600;
+		text-align: center;
+		border: 1px solid rgba(73, 70, 70, 0.2);
+		border-radius: 5px;
+		background: #fff;
+		padding: 3px;
+		margin-bottom: 2px;
+	}
+	.tile-action-wrap {
+		margin-top: 15px;
+		.btn {
+			height: 34px;
+			font-size: 14px;
+			font-weight: 500;
+			width: 100%;
+			padding: 0 3px;
+			border-radius: 5px;
+		}
+	}
+	.tile-photo {
+		aspect-ratio: 105/138;
+		border-radius: 12px;
+		.photo-title {
+			font-size: 14px;
+			padding-bottom: 22px;
+			&:before {
+				position: absolute;
+				bottom: 0;left: 50%;
+				margin-left: -12px;
+			}
+		}
+	}
+	.tile-ico {
+		width: 70px;height: 70px;
+		margin: 0 auto;
+		&.tile-top {
+			width: 30px;height: 30px;
+			margin: 25px 0 40px 0;
+		}
+	}
+}
+.elm-message {
+	display: block;
+	line-height: 1.7;
+	font-weight: bold;
+	position: relative;
+	color: var(--clr-base);
+	&.ms-border {
+		padding: 10px 8px;
+		border-radius: 10px;
+		border: 1px solid var(--clr-base);
+		&.active {
+			border-color: var(--clr-att);
+			color: var(--clr-base);
+		}
+	}
+	&.active {
+		color: var(--clr-att);
+	}
+	&.notify-active {
+		padding-right: 30px;
+		&:after {
+			opacity: 1;
+			display: block;
+		}
+	}
+	&:after {
+		opacity: 0;
+		content: "";
+		display: none;
+		width: 14px;
+		height: 30px;
+		position: absolute;
+		background: url(../img/icons/notify.svg) center no-repeat;
+		background-size: 100% auto;
+		position: absolute;
+		top: 50%;right: 6px;
+		margin-top: -15px;
+	}
+	.ms-title {
+		display: block;
+		font-weight: 400;
+	}
+}
 :is([class^="item-tile"]) {
     &:hover {
         .elm-photo, .tile-photo {

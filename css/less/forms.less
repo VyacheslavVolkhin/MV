@@ -1,6 +1,57 @@
 /* ----------------------------------- *\
 			forms elements styles
 \* ----------------------------------- */
+.frm-field-select-group {
+	display: flex;
+	border-radius: 5px;
+	border: 1px solid rgba(73, 70, 70, 0.2);
+	background: #fff;
+	padding: 5px 0 5px 15px;
+	flex-wrap: wrap;
+	.frm-select {
+		flex-shrink: 0;
+		max-width: 100%;
+		padding-right: 15px;
+		width: 50%;
+		font-weight: bold;
+		max-width: 200px;
+	}
+}
+.frm-field-message {
+	display: flex;
+	.field-input {
+		flex: 1;
+		padding: 0 4px 0 0;
+	}
+	.field-button {
+		flex-shrink: 0;
+	}
+	.btn {
+		height: 40px;
+		border-radius: 5px;
+		border: 1px solid var(--clr-att-second);
+		padding: 0 6px;
+		background: none;
+		font-size: 10px;
+		line-height: 1.5;
+		font-weight: 600;
+		color: var(--clr-att-second);
+		white-space: normal;
+		background: #fff;
+		&:hover {
+			background-color: var(--clr-att);
+			border-color: var(--clr-att);
+			color: #fff;
+		}
+	}
+	.form-input, textarea.form-input {
+		height: 40px;
+		padding: 10px 10px 10px 15px;
+		border-radius: 12px;
+		font-weight: 400;
+		background-color: transparent;
+	}
+}
 .frm-row,
 .frm-field,
 .frm-row-submit {
@@ -39,6 +90,9 @@
 	}
 }
 .frm-select {
+	&.check-inline {
+		display: inline-block;
+	}
 	&.check-right {
 		label {
 			padding-left: 0;
@@ -78,5 +132,19 @@
 				}
 			}
 		}
+	}
+}
+.field-buttons-panel {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: 0 -5px 0 -5px;
+	.field-buttons-group {
+		display: flex;
+		flex-shrink: 0;
+		padding: 0 5px;
+	}
+	.button-ico {
+		width: 28px;
 	}
 }

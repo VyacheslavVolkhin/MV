@@ -8,7 +8,24 @@
     text-overflow: ellipsis;
 	height: 30px;
 	border-radius: 5px;
-	padding-left: 10px;
+	padding-left: 8px;
+	height: 30px;
+	border-radius: 5px;
+	border: 1px solid rgba(73, 70, 70, 0.5);
+	background-color: #fff;
+	line-height: 1.5;
+	font-size: 10px;
+	font-weight: bold;
+	color: var(--clr-base);
+	&.form-input-date {
+		background-image: url(../img/icons/date.svg);
+		background-position: right 3px center;
+		background-size: 20px auto;
+		background-repeat: no-repeat;
+	}
+	&.form-input-second {
+		background-color: transparent;
+	}
 	&.form-att {
 		border-color: var(--clr-base);
 		border-color: rgba(73, 70, 70, 0.5);
@@ -17,7 +34,8 @@
 	}
 }
 textarea.form-input {
-
+	height: 87px;
+	padding: 7px 8px;
 }
 select.form-input {
     display: block;
@@ -37,6 +55,9 @@ select.form-input {
     text-indent: 0.01px;
     //text-overflow: '';
     outline: none;
+	&.form-input-second {
+		background-image: url(../img/icons/arrow-select-att.svg);
+	}
     &.form-input-clear {
         height: auto;
         border: none;
@@ -65,7 +86,7 @@ select::-ms-expand {
 //       <option>Пункт списка</option>
 //   </select>
 select.form-input:required:invalid {
-    color: #ADADAD;
+    color: var(--clr-base);
 }
 .btn {
 	height: 30px;
@@ -76,6 +97,15 @@ select.form-input:required:invalid {
 	font-size: 12px;
 	color: #fff;
 	font-weight: 400;
+	&.button-reset {
+		color: var(--clr-base);
+		background-color: transparent;
+		border: none;
+		&:hover {
+			background-color: transparent;
+			color: var(--clr-att);
+		}
+	}
 	&.button-text {
 		height: auto;
 		line-height: inherit;
@@ -130,6 +160,19 @@ select.form-input:required:invalid {
 			filter: none;
 		}
 	}
+	&.button-message-title {
+		height: 19px;
+		border-radius: 10px;
+		border: none;
+		border-left: 1px solid var(--clr-base);
+		border-right: 1px solid var(--clr-base);
+		border-top: 1px solid var(--clr-base);
+		min-width: 103px;
+		background: none;
+		font-size: 10px;
+		font-weight: 600;
+		color: var(--clr-base);
+	}
 	&.button-second {
 		background: var(--clr-att-second);
 		border: 1px solid var(--clr-att-second);
@@ -141,6 +184,20 @@ select.form-input:required:invalid {
 			.button-ico {
 				filter: brightness(0) invert(1);
 			}
+		}
+	}
+	&.button-gray {
+		&:not(:hover) {
+			background: rgba(73, 70, 70, 0.2);
+			border-color: #000;
+			color: var(--clr-base);
+		}
+	}
+	&.button-light {
+		&:not(:hover) {
+			background: #fff;
+			border-color: #000;
+			color: var(--clr-base);
 		}
 	}
 	&.button-invert {

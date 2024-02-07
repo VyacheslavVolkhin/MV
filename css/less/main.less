@@ -101,3 +101,62 @@ h6, .h6-title {
 .text-center, .title-center {
     text-align: center;
 }
+table {
+	min-width: 100%;
+	line-height: 1.3;
+	thead {
+		th, td {
+			border-bottom-color: var(--clr-base);
+			padding: 0 10px 10px 0;
+			vertical-align: top;
+			&:last-child {
+				padding-right: 0;
+			}
+		}
+		tr {
+			&:last-child {
+				th, td {
+					border-bottom: 1px solid var(--clr-base);
+				}
+			}
+		}
+	}
+	th, td {
+		border: none;
+		border-bottom: 1px solid rgba(73, 70, 70, 0.2);
+		vertical-align: middle;
+		padding: 22px 10px 22px 0;
+		font-weight: 400;
+		text-align: left;
+		&:first-child {
+			padding-left: 0;
+		}
+		&:last-child {
+			padding-right: 0;
+		}
+	}
+	tr {
+		&:last-child {
+			th, td {
+				border-bottom: none;
+			}
+		}
+	}
+	a {
+		&:not(:hover) {
+			color: inherit;
+		}
+		&:hover {
+			color: var(--clr-att);
+		}
+	}
+	.button-ico {
+		width: 32px;height: 32px;
+	}
+	.text-center {
+		text-align: center;
+		.button-ico {
+			margin: 0 auto;
+		}
+	}
+}
