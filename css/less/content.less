@@ -182,6 +182,7 @@
 		font-size: 10px;
 		line-height: 1.3;
 		font-weight: bold;;
+		margin-bottom: 15px;
 	}
 	.tbl-outer-wrap {
 		margin-left: calc(var(--paddingContainer) * -1);
@@ -231,9 +232,30 @@
 	.frm-row {
 		margin: 0 -26px;
 	}
+	.row-space {
+		.frm-field {
+			margin-bottom: 30px;
+		}
+	}
+	.row-date {
+		.frm-field {
+			display: flex;
+			align-items: center;
+			.field-title {
+				margin: 0;
+				padding: 0 8px 0 0;
+			}
+			.field-content {
+				flex: 1;
+			}
+		}
+	}
 	.frm-field {
 		margin-bottom: 5px;
 		padding: 0 26px;
+		&>.button-ico {
+			width: 30px;height: 30px;
+		}
 	}
 	.field-half {
 		width: 50%;

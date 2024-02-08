@@ -24,16 +24,8 @@
         <!-- header -->
         <header class="header">
             <div class="inner-wrap">
-                <div class="nav-inner-wrap">
-                    <a href="" class="btn button-second button-border">
-                        <div class="button-ico">
-                            <img src="./img/icons/arrow-back.svg" alt="">
-                        </div>
-                        <div class="button-title">Назад</div>
-                    </a>
-                </div>
                 <div class="title-inner-wrap">
-                    <div class="header-title">Карточка сотрудника</div>
+                    <div class="header-title">Отправки</div>
                 </div>
                 <div class="menu-inner-wrap popup-menu-wrap js-popup-wrap">
                     <a href="" class="btn-popup btn-action-ico ico-menu js-btn-popup-toggle"></a>
@@ -48,7 +40,260 @@
         <!-- page -->
         <main class="page-full">
 
-            333
+
+            <!--form-box-->
+            <div class="form-box">
+                <div class="frm-row row-space">
+                    <div class="frm-field field-half">
+                        <a href="" class="btn button-second">+ Создать отправку</a>
+                    </div>
+                    <div class="frm-field field-half">
+                        <a href="" class="button-ico">
+                            <img src="./img/icons/xls.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="frm-row row-date row-space">
+                    <div class="frm-field field-half">
+                        <div class="field-title">с:</div>
+                        <div class="field-content">
+                            <input type="text" class="form-input form-input-calendar" value="15.03.2023">
+                        </div>
+                    </div>
+                    <div class="frm-field field-half">
+                        <div class="field-title">ПО::</div>
+                        <div class="field-content">
+                            <input type="text" class="form-input form-input-calendar" value="15.03.2023">
+                        </div>
+                    </div>
+                </div>
+                <div class="frm-row">
+                    <div class="frm-field">
+                        <div class="field-title">Выбрать филиал</div>
+                        <select class="form-input" required>
+                            <option disabled hidden value="">Выбрать категорию</option><!--placeholder-->
+                            <option selected>Москва</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <!--/form-box-->
+
+            <!--table-result-box-->
+            <div class="table-result-box">
+                <div class="info-total-wrap">выбрано: 3 / всего: 6</div>
+                <div class="tbl-outer-wrap">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>№</th>
+                                <th>
+                                    <div class="frm-select check-clear">
+                                        <input type="checkbox" id="all">
+                                        <label for="all"></label>
+                                    </div>
+                                </th>
+                                <th>Статус</th>
+                                <th>ФИО</th>
+                                <th>Специальность</th>
+                                <th>Объект</th>
+                                <th>Офис</th>
+                                <th>Па</th>
+                                <th>Пр</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>
+                                    <div class="frm-select check-clear">
+                                        <input type="checkbox" id="s01-01">
+                                        <label for="s01-01"></label>
+                                    </div>
+                                </td>
+                                <td>Заявка принята</td>
+                                <td>Александров Андрей Сергеевич</td>
+                                <td>Монтажник</td>
+                                <td>Аэропорта г. Кемерово</td>
+                                <td>
+                                    <div class="frm-select check-clear">
+                                        <input type="checkbox" id="s01-02">
+                                        <label for="s01-02"></label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="frm-select check-clear">
+                                        <input type="checkbox" id="s01-03">
+                                        <label for="s01-03"></label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="frm-select check-clear">
+                                        <input type="checkbox" id="s01-04">
+                                        <label for="s01-04"></label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>
+                                    <div class="frm-select check-clear">
+                                        <input type="checkbox" id="s02-01" checked>
+                                        <label for="s02-01"></label>
+                                    </div>
+                                </td>
+                                <td>Заявка принята</td>
+                                <td>Александров Андрей Сергеевич</td>
+                                <td>Монтажник</td>
+                                <td>Аэропорта г. Кемерово</td>
+                                <td>
+                                    <div class="frm-select check-clear">
+                                        <input type="checkbox" id="s02-02" checked>
+                                        <label for="s02-02"></label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="frm-select check-clear">
+                                        <input type="checkbox" id="s02-03" checked>
+                                        <label for="s02-03"></label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="frm-select check-clear">
+                                        <input type="checkbox" id="s02-04" checked>
+                                        <label for="s02-04"></label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>
+                                    <div class="frm-select check-clear">
+                                        <input type="checkbox" id="s03-01">
+                                        <label for="s03-01"></label>
+                                    </div>
+                                </td>
+                                <td>Заявка принята</td>
+                                <td>Александров Андрей Сергеевич</td>
+                                <td>Монтажник</td>
+                                <td>Аэропорта г. Кемерово</td>
+                                <td>
+                                    <div class="frm-select check-clear">
+                                        <input type="checkbox" id="s03-02">
+                                        <label for="s03-02"></label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="frm-select check-clear">
+                                        <input type="checkbox" id="s03-03">
+                                        <label for="s03-03"></label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="frm-select check-clear">
+                                        <input type="checkbox" id="s03-04">
+                                        <label for="s03-04"></label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>
+                                    <div class="frm-select check-clear">
+                                        <input type="checkbox" id="s04-01" checked>
+                                        <label for="s04-01"></label>
+                                    </div>
+                                </td>
+                                <td>Заявка принята</td>
+                                <td>Александров Андрей Сергеевич</td>
+                                <td>Монтажник</td>
+                                <td>Аэропорта г. Кемерово</td>
+                                <td>
+                                    <div class="frm-select check-clear">
+                                        <input type="checkbox" id="s04-02" checked>
+                                        <label for="s04-02"></label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="frm-select check-clear">
+                                        <input type="checkbox" id="s04-03" checked>
+                                        <label for="s04-03"></label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="frm-select check-clear">
+                                        <input type="checkbox" id="s04-04" checked>
+                                        <label for="s04-04"></label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>
+                                    <div class="frm-select check-clear">
+                                        <input type="checkbox" id="s05-01">
+                                        <label for="s05-01"></label>
+                                    </div>
+                                </td>
+                                <td>Заявка принята</td>
+                                <td>Александров Андрей Сергеевич</td>
+                                <td>Монтажник</td>
+                                <td>Аэропорта г. Кемерово</td>
+                                <td>
+                                    <div class="frm-select check-clear">
+                                        <input type="checkbox" id="s05-02">
+                                        <label for="s05-02"></label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="frm-select check-clear">
+                                        <input type="checkbox" id="s05-03">
+                                        <label for="s05-03"></label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="frm-select check-clear">
+                                        <input type="checkbox" id="s05-04">
+                                        <label for="s05-04"></label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>
+                                    <div class="frm-select check-clear">
+                                        <input type="checkbox" id="s06-01">
+                                        <label for="s06-01"></label>
+                                    </div>
+                                </td>
+                                <td>Заявка принята</td>
+                                <td>Александров Андрей Сергеевич</td>
+                                <td>Монтажник</td>
+                                <td>Аэропорта г. Кемерово</td>
+                                <td>
+                                    <div class="frm-select check-clear">
+                                        <input type="checkbox" id="s06-02">
+                                        <label for="s06-02"></label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="frm-select check-clear">
+                                        <input type="checkbox" id="s06-03">
+                                        <label for="s06-03"></label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="frm-select check-clear">
+                                        <input type="checkbox" id="s06-04">
+                                        <label for="s06-04"></label>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!--/table-result-box-->
 
         </main>
         <!-- /page -->

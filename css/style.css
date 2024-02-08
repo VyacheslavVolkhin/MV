@@ -155,6 +155,9 @@ table thead tr:last-child th,
 table thead tr:last-child td {
   border-bottom: 1px solid var(--clr-base);
 }
+table thead .frm-select {
+  margin-top: -5px;
+}
 table th,
 table td {
   border: none;
@@ -191,6 +194,28 @@ table .text-center {
 }
 table .text-center .button-ico {
   margin: 0 auto;
+}
+table .frm-select.check-clear {
+  margin: 0 auto;
+}
+table th:last-child .frm-select.check-clear,
+table td:last-child .frm-select.check-clear {
+  margin-right: 20px;
+}
+table .tbl-select-group {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  padding: 0 5px;
+}
+table .tbl-select-group .select-title {
+  margin: 0 2px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+table .tbl-select-group .select-title:first-child {
+  margin-left: 0;
 }
 /* ----------------------------------- *\
 			structura
@@ -840,6 +865,7 @@ body {
   font-size: 10px;
   line-height: 1.3;
   font-weight: bold;
+  margin-bottom: 15px;
 }
 .table-result-box .tbl-outer-wrap {
   margin-left: calc(var(--paddingContainer) * -1);
@@ -889,9 +915,30 @@ body {
 .form-box .frm-row {
   margin: 0 -26px;
 }
+.form-box .row-space .frm-field {
+  margin-bottom: 30px;
+}
+.form-box .row-date .frm-field {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+}
+.form-box .row-date .frm-field .field-title {
+  margin: 0;
+  padding: 0 8px 0 0;
+}
+.form-box .row-date .frm-field .field-content {
+  -ms-flex: 1;
+      flex: 1;
+}
 .form-box .frm-field {
   margin-bottom: 5px;
   padding: 0 26px;
+}
+.form-box .frm-field > .button-ico {
+  width: 30px;
+  height: 30px;
 }
 .form-box .field-half {
   width: 50%;
@@ -1169,6 +1216,12 @@ body {
   background-image: url(../img/icons/date.svg);
   background-position: right 3px center;
   background-size: 20px auto;
+  background-repeat: no-repeat;
+}
+.form-input.form-input-calendar {
+  background-image: url(../img/icons/calendar.svg);
+  background-position: right 3px center;
+  background-size: 25px auto;
   background-repeat: no-repeat;
 }
 .form-input.form-input-second {
@@ -1618,6 +1671,21 @@ select.form-input:required:invalid {
   content: "";
   display: block;
   position: absolute;
+}
+.frm-select.check-clear {
+  width: 24px;
+  height: 24px;
+}
+.frm-select.check-clear label {
+  width: 24px;
+  height: 24px;
+  min-height: 0;
+  padding: 0;
+}
+.frm-select.check-clear label:before,
+.frm-select.check-clear label:after {
+  top: 50%;
+  left: 50%;
 }
 .frm-select.check-inline {
   display: inline-block;
