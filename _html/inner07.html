@@ -33,7 +33,130 @@
             <!-- page -->
             <main class="page-full">
 				
+				<!--buttons-panel-box-->
+				<div class="buttons-panel-box">
+					<div class="button-wrap button-first">
+						<a href="" class="btn button-second button-border" onclick="this.classList.toggle('active');document.querySelector('.form-filter-wrap').classList.toggle('active');return false;">
+							<div class="button-title">Фильтры</div>
+							<div class="button-ico">
+								<img src="./img/icons/filter-show.svg" alt="" class="img-showed">
+								<img src="./img/icons/filter-hide.svg" alt="" class="img-hided">
+							</div>
+						</a>
+					</div>
+					<div class="button-wrap">
+						<a href="" class="btn button-second button-border">
+							<div class="button-ico">
+								<img src="./img/icons/button-sms.svg" alt="">
+							</div>
+						</a>
+					</div>
+					<div class="button-wrap">
+						<a href="" class="btn button-second button-border">
+							<div class="button-ico">
+								<img src="./img/icons/button-download.svg" alt="">
+							</div>
+						</a>
+					</div>
+					<div class="button-wrap">
+						<a href="" class="btn button-second button-border">
+							<div class="button-ico">
+								<img src="./img/icons/button-time.svg" alt="">
+							</div>
+						</a>
+					</div>
+				</div>
+				<!--/buttons-panel-box-->
 
+				<!--form-box-->
+				<div class="form-box form-filter-wrap">
+					<div class="form-sections-wrap">
+						<div class="form-section-wrap">
+							<div class="frm-row">
+								<div class="frm-field">
+									<div class="field-title">ФИО</div>
+									<select class="form-input">
+									</select>
+								</div>
+							</div>
+							<div class="frm-row">
+								<div class="frm-field">
+									<div class="field-title">Номер телефона</div>
+									<input type="text" class="form-input">
+								</div>
+							</div>
+							<div class="frm-row">
+								<div class="frm-field">
+									<div class="field-title">Объект</div>
+									<select class="form-input">
+									</select>
+								</div>
+							</div>
+							<div class="frm-row">
+								<div class="frm-field">
+									<div class="field-title">Менеджер</div>
+									<select class="form-input">
+									</select>
+								</div>
+							</div>
+							<div class="frm-row">
+								<div class="frm-field">
+									<div class="field-title">Возраст ДО</div>
+									<input type="text" class="form-input">
+								</div>
+							</div>
+						</div>
+						<div class="form-section-wrap">
+							<div class="frm-row">
+								<div class="frm-field">
+									<div class="field-title">Специальность</div>
+									<select class="form-input">
+									</select>
+								</div>
+							</div>
+							<div class="frm-row">
+								<div class="frm-field">
+									<div class="field-title">Доп. специальность</div>
+									<select class="form-input">
+									</select>
+								</div>
+							</div>
+							<div class="frm-row">
+								<div class="frm-field">
+									<div class="field-title">Статус</div>
+									<select class="form-input">
+									</select>
+								</div>
+							</div>
+							<div class="frm-row row-select">
+								<div class="frm-field field-half">
+									<div class="frm-select">
+										<input type="checkbox" id="filter01">
+										<label for="filter01">В офисе</label>
+									</div>
+									<div class="frm-select">
+										<input type="checkbox" id="filter02">
+										<label for="filter02">Парные</label>
+									</div>
+								</div>
+							</div>
+							<div class="frm-row-submit">
+								<div class="frm-field field-half">
+									<button type="submit" class="btn button-second">Поиск</button>
+								</div>
+								<div class="frm-field field-half">
+									<button type="reset" class="btn button-reset">
+										<div class="button-title">Очистить</div>
+										<div class="button-ico">
+											<img src="./img/icons/clear.svg" alt="">
+										</div>
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--/form-box-->
 
 				<!--table-result-box-->
 				<div class="table-result-box">
@@ -51,6 +174,7 @@
 									</th>
 									<th>Статус</th>
 									<th>ФИО</th>
+									<th>Дата рождения</th>
 									<th>Специальность</th>
 									<th>Объект</th>
 									<th class="text-center">Офис</th>
@@ -79,6 +203,7 @@
 									</td>
 									<td>Заявка принята</td>
 									<td>Александров Андрей Сергеевич</td>
+									<td>11.11.2011</td>
 									<td>Монтажник</td>
 									<td>Аэропорта г. Кемерово</td>
 									<td>
@@ -186,6 +311,7 @@
 									</td>
 									<td>Заявка принята</td>
 									<td>Александров Андрей Сергеевич</td>
+									<td>11.11.2011</td>
 									<td>Монтажник</td>
 									<td>Аэропорта г. Кемерово</td>
 									<td>
@@ -293,6 +419,7 @@
 									</td>
 									<td>Заявка принята</td>
 									<td>Александров Андрей Сергеевич</td>
+									<td>11.11.2011</td>
 									<td>Монтажник</td>
 									<td>Аэропорта г. Кемерово</td>
 									<td>
@@ -400,6 +527,7 @@
 									</td>
 									<td>Заявка принята</td>
 									<td>Александров Андрей Сергеевич</td>
+									<td>11.11.2011</td>
 									<td>Монтажник</td>
 									<td>Аэропорта г. Кемерово</td>
 									<td>

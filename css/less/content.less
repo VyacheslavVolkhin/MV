@@ -1,6 +1,48 @@
 /* ----------------------------------- *\
 			content styles
 \* ----------------------------------- */
+.buttons-panel-box {
+	margin-bottom: 10px;
+	margin-left: 0;
+	margin-right: -30px;
+	display: flex;
+	flex-wrap: wrap;
+	.button-wrap {
+		flex-shrink: 0;
+		padding: 0 20px 0 0;
+		margin-bottom: 10px;
+		&.button-first {
+			padding: 0 38px 0 0;
+			.btn {
+				width: auto;
+				padding: 0 16px;
+				font-size: 14px;
+				font-weight: bold;
+				.img-showed {
+					display: none;
+				}
+				.button-ico {
+					margin: 0 0 0 10px;
+				}
+				&.active {
+					.img-showed {
+						display: block;
+					}
+					.img-hided {
+						display: none;
+					}
+				}
+			}
+		}
+	}
+	.btn {
+		width: 40px;
+		padding: 0;
+		.button-ico {
+			margin: 0 auto;
+		}
+	}
+}
 .list-messages-box {
 	display: block;
 	margin-bottom: 16px;
@@ -195,6 +237,57 @@
 		font-weight: bold;
 	}
 }
+
+.table-result-box {
+	.col-4-fix {
+		th, td {
+			&:nth-child(1) {
+				position: sticky;
+				left: 0;
+				z-index: 2;
+				background: #f1f5f9;
+				width: 22px;
+				min-width: 22px;
+				max-width: 22px;
+				&:before {
+					content: "";
+					display: block;
+					width: 10px;
+					position: absolute;
+					top: 0;bottom: 0;right: 100%;
+					background: #f1f5f9;
+				}
+			}
+			&:nth-child(2) {
+				position: sticky;
+				left: 22px;
+				z-index: 2;
+				background: #f1f5f9;
+				width: 34px;
+				min-width: 34px;
+				max-width: 34px;
+			}
+			&:nth-child(3) {
+				position: sticky;
+				left: 56px;
+				z-index: 2;
+				background: #f1f5f9;
+				width: 100px;
+				min-width: 100px;
+				max-width: 100px;
+			}
+			&:nth-child(4) {
+				position: sticky;
+				left: 156px;
+				z-index: 2;
+				background: #f1f5f9;
+				width: 130px;
+				min-width: 130px;
+				max-width: 130px;
+			}
+		}
+	}
+}
 .table-result-box {
 	margin-bottom: 30px;
 	.info-total-wrap {
@@ -224,6 +317,14 @@
 }
 .form-box {
 	margin-bottom: 20px;
+	&.form-filter-wrap {
+		margin-bottom: 40px;
+		display: none;
+		animation: fadein ease 0.2s;
+		&.active {
+			display: block;
+		}
+	}
 	.filter-content-block {
 		display: none;
 	}
@@ -256,6 +357,21 @@
 	.row-space {
 		.frm-field {
 			margin-bottom: 30px;
+		}
+	}
+	.row-select {
+		padding: 20px 0 10px 0;
+		.frm-field {
+			display: flex;
+			flex-wrap: wrap;
+			width: 100%;
+		}
+		.frm-select {
+			font-size: 15px;
+			margin-left: 20px;
+			margin-right: 20px;
+			margin-bottom: 10px;
+			min-width: 120px;
 		}
 	}
 	.row-date {
@@ -519,56 +635,6 @@
 	}
 }
 @media (min-width: 600px) {
-	.table-result-box {
-		.col-4-fix {
-			th, td {
-				&:nth-child(1) {
-					position: sticky;
-					left: 0;
-					z-index: 2;
-					background: #f1f5f9;
-					width: 22px;
-					min-width: 22px;
-					max-width: 22px;
-					&:before {
-						content: "";
-						display: block;
-						width: 10px;
-						position: absolute;
-						top: 0;bottom: 0;right: 100%;
-						background: #f1f5f9;
-					}
-				}
-				&:nth-child(2) {
-					position: sticky;
-					left: 22px;
-					z-index: 2;
-					background: #f1f5f9;
-					width: 34px;
-					min-width: 34px;
-					max-width: 34px;
-				}
-				&:nth-child(3) {
-					position: sticky;
-					left: 56px;
-					z-index: 2;
-					background: #f1f5f9;
-					width: 100px;
-					min-width: 100px;
-					max-width: 100px;
-				}
-				&:nth-child(4) {
-					position: sticky;
-					left: 156px;
-					z-index: 2;
-					background: #f1f5f9;
-					width: 130px;
-					min-width: 130px;
-					max-width: 130px;
-				}
-			}
-		}
-	}
 	.card-box {
 		.item-wrap {
 			width: 25%;
@@ -577,6 +643,28 @@
 			.frm-row {
 				columns: 4
 			}
+		}
+	}
+	.form-box {
+		.form-sections-wrap {
+			margin: 0 -10px;
+			display: flex;
+		}
+		.form-section-wrap {
+			width: 50%;
+			padding: 0 10px;
+			flex-shrink: 0;
+		}
+	}
+}
+@media (min-width: 768px) {
+	.form-box {
+		.form-sections-wrap {
+			margin: 0 -51px;
+			padding: 0 35px;
+		}
+		.form-section-wrap {
+			padding: 0 51px;
 		}
 	}
 }
