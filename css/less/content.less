@@ -220,37 +220,7 @@
 	table {
 		margin: 0;
 	}
-	.col3-fix {
-		th, td {
-			&:nth-child(3) {
-				width: 100px;
-				min-width: 100px;
-				max-width: 100px;
-				position: sticky;
-				background: #f1f5f9;
-				left: 0;
-				z-index: 2;
-				&:before {
-					content: "";
-					display: block;
-					position: absolute;
-					top: 0;bottom: 0;right: 100%;
-					background: #f1f5f9;
-					width: 10px;
-				}
-			}
-		}
-	}
-	.col4-fix {
-		th, td {
-			&:nth-child(4) {
-				position: sticky;
-				left: 100px;
-				z-index: 2;
-				background: #f1f5f9;
-			}
-		}
-	}
+	
 }
 .form-box {
 	margin-bottom: 20px;
@@ -548,7 +518,57 @@
 		}
 	}
 }
-@media (min-width: 640px) {
+@media (min-width: 600px) {
+	.table-result-box {
+		.col-4-fix {
+			th, td {
+				&:nth-child(1) {
+					position: sticky;
+					left: 0;
+					z-index: 2;
+					background: #f1f5f9;
+					width: 22px;
+					min-width: 22px;
+					max-width: 22px;
+					&:before {
+						content: "";
+						display: block;
+						width: 10px;
+						position: absolute;
+						top: 0;bottom: 0;right: 100%;
+						background: #f1f5f9;
+					}
+				}
+				&:nth-child(2) {
+					position: sticky;
+					left: 22px;
+					z-index: 2;
+					background: #f1f5f9;
+					width: 34px;
+					min-width: 34px;
+					max-width: 34px;
+				}
+				&:nth-child(3) {
+					position: sticky;
+					left: 56px;
+					z-index: 2;
+					background: #f1f5f9;
+					width: 100px;
+					min-width: 100px;
+					max-width: 100px;
+				}
+				&:nth-child(4) {
+					position: sticky;
+					left: 156px;
+					z-index: 2;
+					background: #f1f5f9;
+					width: 130px;
+					min-width: 130px;
+					max-width: 130px;
+				}
+			}
+		}
+	}
 	.card-box {
 		.item-wrap {
 			width: 25%;
