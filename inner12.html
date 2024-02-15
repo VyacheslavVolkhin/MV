@@ -22,7 +22,6 @@
     <!-- wrap -->
     <div class="wrap">
 
-
         <!-- header -->
         <header class="header">
             <div class="inner-wrap">
@@ -35,7 +34,7 @@
                     </a>
                 </div>
                 <div class="title-inner-wrap">
-                    <div class="header-title">Карточка сотрудника</div>
+                    <div class="header-title">Отправки</div>
                 </div>
                 <div class="menu-inner-wrap popup-menu-wrap js-popup-wrap">
                     <a href="" class="btn-popup btn-action-ico ico-menu js-btn-popup-toggle"></a>
@@ -50,134 +49,212 @@
         <!-- page -->
         <main class="page-full">
 
-            <!--card-box-->
-            <div class="card-box">
-                <div class="status-inner-wrap">
-                    <div class="page-title">Статус</div>
-                    <div class="action-wrap">
-                        <select class="form-input form-att" required>
-                            <option disabled hidden value="">Выбрать категорию</option><!--placeholder-->
-                            <option selected>Работает</option>
-                            <option>Работает</option>
-                            <option>Работает</option>
-                            <option>Работает</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="comment-inner-wrap">
-                    <p>Какой то комментарий</p>
-                </div>
-                <div class="photo-inner-wrap">
-                    <div class="page-title">Фото сотрудника</div>
-                    <div class="elm-photo photo-upload photo-cover">
-                        <div class="photo-title">Просмотр</div>
-                    </div>
-                    <div class="action-wrap">
-                        <a href="" class="btn button-second">Загрузить</a>
-                    </div>
-                </div>
-                <div class="info-inner-wrap">
-                    <div class="page-title">ФИО</div>
-                    <p><b>Иванов Иван Иванович</b></p>
-                    <div class="page-title">Дата рожд.</div>
-                    <p><b>26.09.1981</b></p>
-                    <div class="page-title">тел ЛИЧНЫЙ</div>
-                    <p><b><a href="tel:89999999999">+7 (999) 999-99-99</a></b></p>
-                    <div class="page-title">тел РАБОЧИЙ</div>
-                    <p><b><a href="tel:87777777777">+7 (777) 777-77-77</a></b></p>
-                    <div class="page-title">Эл. почта раб.</div>
-                    <p><b><a href="mailto:ivanov@team-profi.ru">ivanov@team-profi.ru</a></b></p>
-                    <div class="page-title">Эл. почта лич.</div>
-                    <p><b><a href="mailto:ivanov@yandex.ru">ivanov@yandex.ru</a></b></p>
-                </div>
-                <div class="password-inner-wrap">
-                    <a href="" class="btn button-text">
-                        <div class="button-title">Сменить пароль</div>
-                        <div class="button-ico">
-                            <img src="./img/icons/coub.svg" alt="">
-                        </div>
-                    </a>
-                </div>
-                <div class="parameters-inner-wrap">
-                    <div class="frm-row">
-                        <div class="frm-field">
-                            <div class="frm-select check-right">
-                                <input type="checkbox" id="chk01">
-                                <label for="chk01">Управляющий</label>
-                            </div>
-                        </div>
-                        <div class="frm-field">
-                            <div class="frm-select check-right">
-                                <input type="checkbox" id="chk02">
-                                <label for="chk02">Бронирующий</label>
-                            </div>
-                        </div>
-                        <div class="frm-field">
-                            <div class="frm-select check-right">
-                                <input type="checkbox" id="chk03">
-                                <label for="chk03">Охрана труда</label>
-                            </div>
-                        </div>
-                        <div class="frm-field">
-                            <div class="frm-select check-right">
-                                <input type="checkbox" id="chk04">
-                                <label for="chk04">Проверяющий</label>
-                            </div>
-                        </div>
-                        <div class="frm-field">
-                            <div class="frm-select check-right">
-                                <input type="checkbox" id="chk05">
-                                <label for="chk05">Менеджер</label>
-                            </div>
-                        </div>
-                        <div class="frm-field">
-                            <div class="frm-select check-right">
-                                <input type="checkbox" id="chk06">
-                                <label for="chk06">Трэвл отдел</label>
-                            </div>
-                        </div>
-                        <div class="frm-field">
-                            <div class="frm-select check-right">
-                                <input type="checkbox" id="chk07">
-                                <label for="chk07">Согласующий</label>
-                            </div>
-                        </div>
-                        <div class="frm-field">
-                            <div class="frm-select check-right">
-                                <input type="checkbox" id="chk08">
-                                <label for="chk08">Отдел кадров</label>
+            <!--tiles-box-->
+            <div class="tiles-box">
+                <div class="items-wrap">
+                    <!--item wrap-->
+                    <div class="item-wrap">
+                        <div class="item-tile-panel-info tile-main">
+                            <div class="tile-panels-wrap">
+                                <div class="tile-panel-wrap">
+                                    <table>
+                                        <tbody>
+                                            <tr>
+                                                <td>Всего: <b>30</b></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Приехало: <b>27</b></td>
+                                            </tr>
+                                            <tr>
+                                                <td>В дороге: <b>3</b></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="tile-panel-wrap tile-center">
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th class="">Отправка </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td><b>26.11.2023</b></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Москва</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="desc-inner-wrap">
-                    <div class="page-title">Филиал:</div>
-                    <p><b>Москва</b></p>
-                    <div class="page-title">Отдел:</div>
-                    <p><b>Бухгалтерия</b></p>
-                    <div class="page-title">Должность:</div>
-                    <p><b>Бухгалтер по заработной плате</b></p>
-                    <div class="page-title">Должностные обязанности:</div>
-                    <p>---</p>
-                    <div class="page-title">Вн. номер тел:</div>
-                    <p>---</p>
-                    <div class="page-title">Рабочее время:</div>
-                    <p><b>с 07:30 до 16:30</b></p>
-                    <div class="page-title">Кабинет:</div>
-                    <p><b>403</b></p>
-                    <div class="page-title">Этаж:</div>
-                    <p><b>4</b></p>
-                </div>
-                <div class="action-inner-wrap">
-                    <a href="" class="btn button-text">
-                        <div class="button-ico">
-                            <img src="./img/icons/arrow-time.svg" alt="">
+                    <!--/item wrap-->
+                    <!--item wrap-->
+                    <div class="item-wrap">
+                        <div class="item-tile-panel-info tile-main">
+                            <div class="tile-panels-wrap">
+                                <div class="tile-panel-wrap">
+                                    <table>
+                                        <tbody>
+                                            <tr>
+                                                <td>Всего: <b>30</b></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Приехало: <b>27</b></td>
+                                            </tr>
+                                            <tr>
+                                                <td>В дороге: <b>3</b></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="tile-panel-wrap tile-center">
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th class="">Отправка </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td><b>26.11.2023</b></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Москва</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
                         </div>
-                        <div class="button-title">Список агентов</div>
-                    </a>
+                    </div>
+                    <!--/item wrap-->
+                    <!--item wrap-->
+                    <div class="item-wrap">
+                        <div class="item-tile-panel-info tile-main">
+                            <div class="tile-panels-wrap">
+                                <div class="tile-panel-wrap">
+                                    <table>
+                                        <tbody>
+                                            <tr>
+                                                <td>Всего: <b>30</b></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Приехало: <b>27</b></td>
+                                            </tr>
+                                            <tr>
+                                                <td>В дороге: <b>3</b></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="tile-panel-wrap tile-center">
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th class="">Отправка </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td><b>26.11.2023</b></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Москва</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/item wrap-->
+                    <!--item wrap-->
+                    <div class="item-wrap">
+                        <div class="item-tile-panel-info tile-main">
+                            <div class="tile-panels-wrap">
+                                <div class="tile-panel-wrap">
+                                    <table>
+                                        <tbody>
+                                            <tr>
+                                                <td>Всего: <b>30</b></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Приехало: <b>27</b></td>
+                                            </tr>
+                                            <tr>
+                                                <td>В дороге: <b>3</b></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="tile-panel-wrap tile-center">
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th class="">Отправка </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td><b>26.11.2023</b></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Москва</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/item wrap-->
+                    <!--item wrap-->
+                    <div class="item-wrap">
+                        <div class="item-tile-panel-info tile-main">
+                            <div class="tile-panels-wrap">
+                                <div class="tile-panel-wrap">
+                                    <table>
+                                        <tbody>
+                                            <tr>
+                                                <td>Всего: <b>30</b></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Приехало: <b>27</b></td>
+                                            </tr>
+                                            <tr>
+                                                <td>В дороге: <b>3</b></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="tile-panel-wrap tile-center">
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th class="">Отправка </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td><b>26.11.2023</b></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Москва</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/item wrap-->
                 </div>
             </div>
-            <!--/card-box-->
+            <!--/tiles-box-->
 
         </main>
         <!-- /page -->

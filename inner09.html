@@ -25,8 +25,16 @@
         <!-- header -->
         <header class="header">
             <div class="inner-wrap">
+                <div class="nav-inner-wrap">
+                    <a href="" class="btn button-second button-border">
+                        <div class="button-ico">
+                            <img src="./img/icons/arrow-back.svg" alt="">
+                        </div>
+                        <div class="button-title">Назад</div>
+                    </a>
+                </div>
                 <div class="title-inner-wrap">
-                    <div class="header-title">Таблица потребностей</div>
+                    <div class="header-title">Список рабочих</div>
                 </div>
                 <div class="menu-inner-wrap popup-menu-wrap js-popup-wrap">
                     <a href="" class="btn-popup btn-action-ico ico-menu js-btn-popup-toggle"></a>
@@ -41,176 +49,80 @@
         <!-- page -->
         <main class="page-full">
 
-            <!--form-box-->
-            <div class="form-box">
+            <!-- form box -->
+            <div class="form-box form-large form-short">
                 <div class="frm-row">
                     <div class="frm-field">
-                        <div class="frm-field-textarea">
-                            <div class="field-buttons-panel">
-                                <div class="field-buttons-group">
-                                    <a href="" class="button-ico">
-                                        <img src="./img/icons/panel01.svg" alt="">
-                                    </a>
-                                    <a href="" class="button-ico">
-                                        <img src="./img/icons/panel02.svg" alt="">
-                                    </a>
-                                    <a href="" class="button-ico">
-                                        <img src="./img/icons/panel03.svg" alt="">
-                                    </a>
-                                </div>
-                                <div class="field-buttons-group">
-                                    <a href="" class="button-ico">
-                                        <img src="./img/icons/panel04.svg" alt="">
-                                    </a>
-                                    <a href="" class="button-ico">
-                                        <img src="./img/icons/panel05.svg" alt="">
-                                    </a>
-                                    <a href="" class="button-ico">
-                                        <img src="./img/icons/panel06.svg" alt="">
-                                    </a>
-                                </div>
-                                <div class="field-buttons-group">
-                                    <a href="" class="button-ico">
-                                        <img src="./img/icons/panel07.svg" alt="">
-                                    </a>
-                                    <a href="" class="button-ico">
-                                        <img src="./img/icons/panel08.svg" alt="">
-                                    </a>
-                                </div>
-                                <div class="field-buttons-group">
-                                    <a href="" class="button-ico">
-                                        <img src="./img/icons/panel09.svg" alt="">
-                                    </a>
-                                    <a href="" class="button-ico">
-                                        <img src="./img/icons/panel10.svg" alt="">
-                                    </a>
-                                </div>
-                            </div>
-                            <textarea class="form-input"></textarea>
-                        </div>
+                        <div class="field-title">ФИО</div>
+                        <input type="text" class="form-input form-input-search" calue="Иванов Иван Иванович">
                     </div>
                 </div>
-                <div class="filter-inner-wrap js-popup-wrap">
-                    <a href="" class="btn-popup-filter js-btn-popup-toggle">
-                        <div class="button-title" data-show="Фильтры показать" data-hide="Фильтры скрыть"></div>
-                    </a>
-                    <div class="filter-content-block js-popup-block">
-                        <div class="frm-row">
-                            <div class="frm-field">
-                                <div class="field-title">Контрагент</div>
-                                <select class="form-input form-input-second">
-                                </select>
-                            </div>
-                        </div>
-                        <div class="frm-row">
-                            <div class="frm-field">
-                                <div class="field-title">Объект</div>
-                                <select class="form-input form-input-second">
-                                </select>
-                            </div>
-                        </div>
-                        <div class="frm-row">
-                            <div class="frm-field">
-                                <div class="field-title">Специальность</div>
-                                <select class="form-input form-input-second">
-                                </select>
-                            </div>
-                        </div>
-                        <div class="frm-row">
-                            <div class="frm-field">
-                                <div class="field-title">Город</div>
-                                <select class="form-input form-input-second">
-                                </select>
-                            </div>
-                        </div>
-                        <div class="frm-row row-range">
-                            <div class="frm-field">
-                                <div class="field-title">Возраст ОТ</div>
-                                <input type="text" class="form-input form-input-second">
-                            </div>
-                            <div class="frm-field">
-                                <div class="field-title">Возраст ДО</div>
-                                <input type="text" class="form-input form-input-second">
-                            </div>
-                        </div>
-                        <div class="frm-row">
-                            <div class="frm-field">
-                                <div class="field-title">Статус</div>
-                                <select class="form-input form-input-second">
-                                </select>
-                            </div>
-                        </div>
-                        <div class="frm-row-submit">
-                            <div class="frm-field field-half">
-                                <button type="submit" class="btn button-second">Поиск</button>
-                            </div>
-                            <div class="frm-field field-half">
-                                <button type="reset" class="btn button-reset">Очистить</button>
-                            </div>
-                        </div>
+                <div class="frm-row">
+                    <div class="frm-field">
+                        <div class="field-title">Телефон</div>
+                        <input type="text" class="form-input form-input-search" calue="+7 (999) 999-99-99">
+                    </div>
+                </div>
+                <div class="frm-row-submit">
+                    <div class="frm-field field-center">
+                        <button type="submit" class="btn button-second button-large">Найти</button>
                     </div>
                 </div>
             </div>
-            <!--/form-box-->
+            <!-- /form box -->
 
-            <!--table-result-box-->
-            <div class="table-result-box">
+            <!--results-box-->
+            <div class="results-box">
                 <div class="info-total-wrap">выбрано: 3 / всего: 6</div>
-                <div class="tbl-outer-wrap">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Специальность</th>
-                                <th>Объект</th>
-                                <th colspan="2">Ставка <br>руб./час.</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td><a href="">Электромонтажник 5-го разряда</a></td>
-                                <td><a href="">СтройКом Брянскагрострой, Калининградская обл, Гурьвский р-н, п.Невское</a></td>
-                                <td class="text-center">150</td>
-                                <td class="text-center">
-                                    <a href="" class="button-ico">
-                                        <img src="./img/icons/eye.svg" alt="">
-                                    </a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td><a href="">Электромонтажник 5-го разряда</a></td>
-                                <td><a href="">СтройКом Брянскагрострой, Калининградская обл, Гурьвский р-н, п.Невское</a></td>
-                                <td class="text-center">150</td>
-                                <td class="text-center">
-                                    <a href="" class="button-ico">
-                                        <img src="./img/icons/eye.svg" alt="">
-                                    </a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td><a href="">Электромонтажник 5-го разряда</a></td>
-                                <td><a href="">СтройКом Брянскагрострой, Калининградская обл, Гурьвский р-н, п.Невское</a></td>
-                                <td class="text-center">150</td>
-                                <td class="text-center">
-                                    <a href="" class="button-ico">
-                                        <img src="./img/icons/eye.svg" alt="">
-                                    </a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td><a href="">Электромонтажник 5-го разряда</a></td>
-                                <td><a href="">СтройКом Брянскагрострой, Калининградская обл, Гурьвский р-н, п.Невское</a></td>
-                                <td class="text-center">150</td>
-                                <td class="text-center">
-                                    <a href="" class="button-ico">
-                                        <img src="./img/icons/eye.svg" alt="">
-                                    </a>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
+                <div class="items-wrap">
+                    <div class="item-wrap">
+                        <div class="item-tile-result">Караваев Владимир Николаевич</div>
+                    </div>
+                    <div class="item-wrap">
+                        <div class="item-tile-result">Жаксыбаев Ержигит Сандыбекович</div>
+                    </div>
+                    <div class="item-wrap">
+                        <div class="item-tile-result">Дыкин Антон Романомич</div>
+                    </div>
+                    <div class="item-wrap">
+                        <div class="item-tile-result">Полушин Александр Александрович </div>
+                    </div>
+                    <div class="item-wrap">
+                        <div class="item-tile-result">Банников Кирилл Викторович </div>
+                    </div>
+                    <div class="item-wrap">
+                        <div class="item-tile-result">Караваев Владимир Николаевич</div>
+                    </div>
+                    <div class="item-wrap">
+                        <div class="item-tile-result">Жаксыбаев Ержигит Сандыбекович</div>
+                    </div>
+                    <div class="item-wrap">
+                        <div class="item-tile-result">Дыкин Антон Романомич</div>
+                    </div>
+                    <div class="item-wrap">
+                        <div class="item-tile-result">Полушин Александр Александрович </div>
+                    </div>
+                    <div class="item-wrap">
+                        <div class="item-tile-result">Банников Кирилл Викторович </div>
+                    </div>
+                    <div class="item-wrap">
+                        <div class="item-tile-result">Караваев Владимир Николаевич</div>
+                    </div>
+                    <div class="item-wrap">
+                        <div class="item-tile-result">Жаксыбаев Ержигит Сандыбекович</div>
+                    </div>
+                    <div class="item-wrap">
+                        <div class="item-tile-result">Дыкин Антон Романомич</div>
+                    </div>
+                    <div class="item-wrap">
+                        <div class="item-tile-result">Полушин Александр Александрович </div>
+                    </div>
+                    <div class="item-wrap">
+                        <div class="item-tile-result">Банников Кирилл Викторович </div>
+                    </div>
                 </div>
             </div>
-            <!--/table-result-box-->
+            <!--/results-box-->
 
         </main>
         <!-- /page -->

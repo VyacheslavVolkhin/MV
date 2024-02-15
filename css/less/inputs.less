@@ -17,6 +17,13 @@
 	font-size: 10px;
 	font-weight: bold;
 	color: var(--clr-base);
+	&.form-input-search {
+		padding-right: 30px;
+		background-image: url(../img/icons/search.svg);
+		background-position: right 5px center;
+		background-repeat: no-repeat;
+		background-size: 20px auto;
+	}
 	&.form-input-date {
 		background-image: url(../img/icons/date.svg);
 		background-position: right 3px center;
@@ -103,6 +110,59 @@ select.form-input:required:invalid {
 	font-size: 12px;
 	color: #fff;
 	font-weight: 400;
+	&.button-select, &.button-select-ico {
+		min-height: 60px;
+		border-color: #43415E;
+		border-radius: 5px;
+		background: none;
+		font-size: 20px;
+		line-height: (34/20);
+		text-align: center;
+		white-space: normal;
+		color: #f00;
+		font-weight: bold;
+		width: 100%;
+		&:hover {
+			background-color: #43415E;
+			border-color: #43415E;
+			color: #fff;
+		}
+	}
+	&.button-select-ico {
+		color: var(--clr-base);
+		min-height: 85px;
+		padding: 5px 10px;
+		align-items: center;
+		display: flex;
+		justify-content: flex-start;
+		text-align: left;
+		&.button-alert {
+			color: #f00;
+			&:hover {
+				color: #f00;
+			}
+		}
+		.button-ico {
+			width: 70px;height: 75px;
+			flex-shrink: 0;
+			filter: none;
+		}
+		.button-title {
+			flex: 1;
+			padding: 0 20px 0 0;
+		}
+		&:hover {
+			color: var(--clr-base);
+			background-color: #D9D9D9;
+		}
+	}
+	&.button-large {
+		height: 40px;
+		font-size: 16px;
+		padding: 0 30px;
+		min-width: 182px;
+		font-weight: bold;
+	}
 	&.button-reset {
 		color: var(--clr-base);
 		background-color: transparent;
@@ -344,6 +404,12 @@ select.form-input:required:invalid {
             box-shadow: none;
         }
     }
+	&.ico-search {
+		&:before {
+			background-image: url(../img/icons/search.svg);
+			background-size: 20px auto;
+		}
+	}
     &.ico-arrow {
         z-index: 20;
         cursor: pointer;
