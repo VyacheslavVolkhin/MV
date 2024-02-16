@@ -398,11 +398,16 @@ body {
   display: block;
   position: relative;
   border: 1px solid #f1f5f9;
+  border-left: none;
+  border-right: none;
   font-size: 16px;
   line-height: 21px;
   padding: 11px 6px;
   color: var(--clr-base);
   overflow: hidden;
+}
+.item-tile-result.tile-no-border {
+  border: none;
 }
 .item-tile-result.tile-att {
   background-color: rgba(248, 101, 1, 0.5);
@@ -427,6 +432,13 @@ body {
   font-size: 10px;
   line-height: 1.5;
   overflow: hidden;
+}
+.item-tile-panel-info.tile-table-fixed .tile-panel-wrap {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.item-tile-panel-info.tile-table-fixed table {
+  table-layout: fixed;
 }
 .item-tile-panel-info.tile-center table tbody th,
 .item-tile-panel-info .tile-center table tbody th,
